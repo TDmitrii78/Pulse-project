@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    &__logo {
+        width: 251px;
+        img {
+            width: 100%;
+        }
+    }
+    &__official {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 12px;
+        span{
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    &__binding {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__phone {
+        display: block;
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+}

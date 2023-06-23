@@ -1,0 +1,67 @@
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 27px 0;
+    transform: translate(-50%, -50%);
+    width: 382px;
+    min-height: 403px;
+    background: #F2F2F2;
+    &_mini {
+        min-height: 143px;
+    }
+    &_animation {
+        animation-name: showBlock;
+        animation-duration: 1s;
+    }
+    &__exit {
+        position: absolute;
+        right: -40px;
+        top: 0;
+        font-size: 41px;
+        line-height: 21px;
+        color: $base-color;
+        cursor: pointer;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 19px;
+        text-align: center;
+        color: #0D0D0D;
+    }
+    &__description {
+        margin-top: 10px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        color: #0D0D0D;
+    }
+    form {
+        margin: 0 auto;
+        margin-top: 27px;
+        input.error {
+                border: red solid 5px;
+            
+        }
+    }
+}
+#consultation, #bay, #thank {
+    display: none;
+    label.error {
+        color: #0D0D0D;
+    }
+}
+label.error {
+        color: white;
+}
+
+
